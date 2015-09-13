@@ -1,0 +1,9 @@
+Model OS{
+	name: 'OS'
+	properties: [
+		name{
+			name: 'OS Name'
+			type: Text
+		}
+	]
+}

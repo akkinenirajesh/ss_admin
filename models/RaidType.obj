@@ -1,0 +1,9 @@
+Model RaidType {
+	name: 'Raid Type'
+	properties: [
+		name {
+			name: 'Name'
+			type: Text
+		}
+	]
+}

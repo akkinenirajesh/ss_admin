@@ -1,0 +1,15 @@
+Model ProcessorOption {
+	name: 'Processor Option'
+	isChildren: true
+	properties: [
+		processor {
+			name: 'Processor'
+			type: Reference
+			referenceTo: #Processor
+		},
+		cost {
+			name: 'Cost'
+			type: Amount
+		}
+	]
+}

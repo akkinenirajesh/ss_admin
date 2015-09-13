@@ -1,0 +1,24 @@
+Model RAM{
+	name: 'RAM'
+	properties: [
+		size {
+			name: 'Size in GB'
+			type: Number
+			scale: 0
+		},
+		type {
+			name: 'Type'
+			type: Reference
+			referenceTo: #RAMType
+		},
+		speed {
+			name: 'Speed'
+			type: Reference
+			referenceTo: #RAMSpeed
+		}
+		ecc {
+			name: 'ECC RAM'
+			type: boolean
+		}
+	]
+}

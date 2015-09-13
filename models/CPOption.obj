@@ -1,0 +1,14 @@
+Model CPOption {
+	name: 'Control Panel Option'
+	properties: [
+		controlPanel {
+			name: 'Control Panel'
+			type: Reference
+			referenceTo: #ControlPanel
+		},
+		cost {
+			name: 'Cost'
+			type: Amount
+		}
+	]
+}

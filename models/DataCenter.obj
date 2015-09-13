@@ -1,0 +1,17 @@
+Model DataCenter {
+	name: 'Data Center'
+	properties: [
+		name {
+			name: 'Name'
+			type: Text
+		},
+		address {
+			name: 'Address'
+			type: TextArea
+		},
+		location {
+			name: 'Location'
+			type: Text
+		}
+	]
+}

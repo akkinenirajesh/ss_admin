@@ -1,0 +1,15 @@
+Model RAMOption {
+	name: 'RAM Option'
+	properties: [
+		ram{
+			name: 'RAM'
+			type: Reference
+			referenceTo: #RAM
+			required: true
+		},
+		cost {
+			name: 'Cost'
+			type: Amount
+		}
+	]
+}

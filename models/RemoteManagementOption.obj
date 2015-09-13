@@ -1,0 +1,14 @@
+Model RemoteManagementOption {
+	name: 'Remote Management Option'
+	properties: [
+		option {
+			name: 'Name'
+			type: Reference
+			referenceTo: #RemoteManagement
+		},
+		cost {
+			name: 'Cost'
+			type: Amount
+		}
+	]
+}

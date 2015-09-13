@@ -1,0 +1,14 @@
+Model NetworkBackupOption{
+	name: 'Network Backup Option'
+	properties: [
+		option {
+			name: 'Option'
+			type: Reference
+			referenceTo: #NetworkBackup
+		},
+		cost {
+			name: 'Cost'
+			type: 'Amount'
+		}
+	]
+}

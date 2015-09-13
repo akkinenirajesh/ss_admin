@@ -1,0 +1,13 @@
+Model NetworkBackup {
+	name: 'Network Backup'
+	properties: [
+		name {
+			name: 'Name'
+			type: Text
+		},
+		size {
+			name: 'Size in GB'
+			type: Number
+		}
+	]
+}

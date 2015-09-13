@@ -1,0 +1,9 @@
+Model RAMSpeed {
+	name: 'RAM Speed'
+	properties: [
+		speed {
+			name: 'Speed in MHz'
+			type: Number
+		}
+	]
+}

@@ -1,0 +1,14 @@
+Model Drive {
+	name: 'Drive'
+	properties: [
+		model {
+			name: 'Model'
+			type: Text
+		},
+		size {
+			name: 'Size in GB'
+			type: Number
+			scale: 0
+		}
+	]
+}

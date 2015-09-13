@@ -1,0 +1,14 @@
+Model OSOption{
+	name: 'OS Option'
+	properties: [
+		os {
+			name: 'OS'
+			type: Reference
+			referenceTo: #OS
+		},
+		cost {
+			name: 'Cost'
+			type: Amount
+		}
+	]
+}

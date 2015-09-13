@@ -1,0 +1,9 @@
+Model ControlPanel {
+	name: 'Control Panel'
+	properties: [
+		name {
+			name: 'Name'
+			type: Text
+		}
+	]
+}

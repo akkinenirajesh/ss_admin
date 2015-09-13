@@ -1,0 +1,13 @@
+Model IPAllocationOption {
+	name: 'IP Allocation Option'
+	properties: [
+		count {
+			name: 'Count'
+			type: Number
+		},
+		cost {
+			name: 'Cost'
+			type: Amount
+		}
+	]
+}

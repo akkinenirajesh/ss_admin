@@ -1,0 +1,18 @@
+Model BackupStorageOption {
+	name: 'Backup Storage Option'
+	properties: [
+		storage{
+			name: 'Storage'
+			type: Reference
+			referenceTo: #BackupStorage
+		},
+		count {
+			name: 'Count'
+			type: Number
+		},
+		cost {
+			name: 'Cost'
+			type: Amount
+		}
+	]
+}

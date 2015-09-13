@@ -1,0 +1,9 @@
+Model RemoteManagement {
+	name: 'Remote Management'
+	properties: [
+		name {
+			name: 'Name'
+			type: Text
+		}
+	]
+}

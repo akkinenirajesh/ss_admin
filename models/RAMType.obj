@@ -1,0 +1,9 @@
+Model RAMType{
+	name: 'RAM Type'
+	properties: [
+		{
+			name: 'Type'
+			type: Text
+		}
+	]
+}

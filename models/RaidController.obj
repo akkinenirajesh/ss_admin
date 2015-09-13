@@ -1,0 +1,9 @@
+Model RaidController {
+	name: 'Raid Controller'
+	properties: [
+		model {
+			name: 'Model'
+			type: Text
+		}
+	]
+}

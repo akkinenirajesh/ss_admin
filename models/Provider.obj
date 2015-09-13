@@ -1,0 +1,47 @@
+Model Provider{
+	name: 'Provider'
+	properties: [
+		companyName {
+			name: 'Company Name'
+			type: Text
+		},
+		site {
+			name: 'Site'
+			type: Text
+		},
+		country {
+			name: 'Country'
+			type: Reference
+			referenceTo: #Country
+		},
+		address {
+			name: 'Address',
+			type: TextArea
+		},
+		enquiryPhone1 {
+			name: 'Enquiry Phone1'
+			type: Phone
+		},
+		enquiryPhone2 {
+			name: 'Enquiry Phone2'
+			type: text
+		},
+		enquiryEmail {
+			name: 'Enquiry Email'
+			type: Email
+		},
+		supportPhone1 {
+			name: 'Support Phone1'
+			type: Phone
+		},
+		supportEmail {
+			name: 'Support Email'
+			type: Email
+		}
+		currency {
+			name: 'Currency',
+			type: Reference
+			referenceTo: #Currency
+		}
+	]
+}

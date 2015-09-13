@@ -1,0 +1,20 @@
+Model RaidOption {
+	name: 'Raid Option'
+	properties: [
+		controller {
+			name: 'Controller'
+			type: Reference
+			referenceTo: #RaidController
+		},
+		raidType {
+			name: 'Type'
+			type: Reference
+			referenceTo: #RaidType
+		},
+		cost {
+			name: 'Cost'
+			type: Amount
+		}
+	]
+
+}

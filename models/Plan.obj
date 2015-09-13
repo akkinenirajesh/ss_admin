@@ -1,0 +1,115 @@
+Model Plan {
+	name: 'Plan'
+	properties: [
+		name {
+			name:'Name'
+			type: Text
+			required: true
+		},
+		provider: {
+			name: 'Provider'
+			type: Reference
+			referenceTo: #Provider
+			required: true
+		},
+		basePrice {
+			name: 'Base Price'
+			type: Amount
+			currency: {! provider.currency }
+		},
+		setupFee {
+			name: 'Setup Fee'
+			type: Amount
+			currency: {! provider.currency }
+		},
+		excludingVAT{
+			name: 'Excluding VAT'
+			type: Boolean
+		},
+		quarterlyDiscount {
+			name: 'Quarterly Discount'
+			type: Percent
+		},
+		annuallyDiscount {
+			name: 'Annually Discount'
+			type: Percent
+		},
+		defaultPricingMode {
+			name: 'Default Pricing Mode'
+			type: Picklist
+			picklist: #PricingMode
+		},
+		processors {
+			name: 'Processor Options'
+			type: Reference
+			referenceTo: #ProcessorOption
+			relation: OneManyChildren
+		},
+		rams {
+			name: 'RAM Options'
+			type: Reference
+			referenceTo: #RAMOption
+			relation: OneManyChildren
+		},
+		storage {
+			name: 'Storage Options'
+			type: Reference
+			referenceTo: #StorageOption
+			relation: OneManyChildren
+		},
+		osOptions {
+			name: 'OS Options'
+			type: Reference
+			referenceTo: #OSOption
+			relation: OneManyChildren
+		},
+		controlPanels {
+			name: 'Control Panel Options'
+			type: Reference
+			referenceTo: #CPOption
+			relatoin: OneManyChildren
+		},
+		raidOptions {
+			name: 'Raid Options'
+			type: Reference
+			referenceTo: #RaidOption
+			relation: OneManyChildren
+		},
+		remoteOptions {
+			name: 'Remote Management Options'
+			type: Reference
+			referenceTo: #RemoteManagementOption
+			relation: OneManyChildren
+		},
+		backupStorage {
+			name: 'Backup Storage'
+			type: Reference
+			referenceTo: #BackupStorageOption
+			relation: OneManyChildren
+		},
+		networkBackup {
+			name: 'Network Backup'
+			type: Reference
+			referenceTo: #NetworkBackupOptions
+			relation: OneManyChildren
+		},
+		firewallOptions {
+			name: 'Firewall Options'
+			type: Reference
+			referenceTo: #FirewallOption
+			relation: OneManyChildren
+		},
+		ipAllocation {
+			name: 'IP Allocation'
+			type: Reference
+			referenceTo: #IPAllocationOption
+			relation: OneManyChildren
+		},
+		banddithOptions {
+			name: 'Bandwidth Options'
+			type: Reference
+			referenceTo: #BandwidthOption
+			relation: OneManyChildren
+		}
+	]
+}

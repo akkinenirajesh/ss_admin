@@ -1,0 +1,19 @@
+Model StorageOption {
+	name: 'Storage Option'
+	properties: [
+		drive{
+			name: 'Drive'
+			type: Reference
+			referenceTo: #Drive
+		},
+		count {
+			name: 'Count'
+			type: Number
+			scale: 0
+		},
+		cost {
+			name: 'Cost'
+			type: Amount
+		}
+	]
+}

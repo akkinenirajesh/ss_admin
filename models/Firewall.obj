@@ -1,0 +1,9 @@
+Model Firewall {
+	name: 'Firewall'
+	properties: [
+		name{
+			name: 'Name'
+			type: Text
+		}
+	]
+}

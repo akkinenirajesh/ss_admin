@@ -1,0 +1,10 @@
+Model Processor {
+	name: 'Processor'
+	properties: [
+		model {
+			name: 'model'
+			type: Text
+		},
+		
+	]
+}

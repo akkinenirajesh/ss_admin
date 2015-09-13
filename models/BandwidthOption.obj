@@ -1,0 +1,25 @@
+Model BandwidthOption {
+	name: 'Bandwidth Option'
+	properties: [
+		metered {
+			name: 'Is Metered'
+			type: Boolean
+		},
+		inLimit {
+			name: 'In Limit in GB'
+			type: Number
+		},
+		outLimit {
+			name: 'Out Limit in GB'
+			type: Number
+		},
+		speed {
+			name: 'Speed in Mbits/s'
+			type: Number
+		},
+		cost {
+			name: 'Cost'
+			type: Amount
+		}
+	]
+}

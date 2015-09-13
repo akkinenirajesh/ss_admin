@@ -1,0 +1,14 @@
+Model FirewallOption {
+	name: 'Firewall Option'
+	properties: [
+		firewall {
+			name: 'Firewall'
+			type: Reference
+			referenceTo: #Firewall
+		},
+		cost {
+			name: 'Cost'
+			type: Amount
+		}
+	]
+}
