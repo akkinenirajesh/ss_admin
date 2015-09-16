@@ -5,6 +5,7 @@ Model FirewallOption {
 			name: 'Firewall'
 			type: Reference
 			referenceTo: #Firewall
+			required : true
 		},
 		cost {
 			name: 'Cost'

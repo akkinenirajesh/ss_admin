@@ -6,6 +6,7 @@ Model ProcessorOption {
 			name: 'Processor'
 			type: Reference
 			referenceTo: #Processor
+			required : true
 		},
 		cost {
 			name: 'Cost'

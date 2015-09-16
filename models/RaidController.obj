@@ -4,6 +4,7 @@ Model RaidController {
 		model {
 			name: 'Model'
 			type: Text
+			required : true
 		}
 	]
 }

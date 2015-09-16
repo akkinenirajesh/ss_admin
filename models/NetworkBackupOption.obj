@@ -5,6 +5,7 @@ Model NetworkBackupOption{
 			name: 'Option'
 			type: Reference
 			referenceTo: #NetworkBackup
+			required : true
 		},
 		cost {
 			name: 'Cost'

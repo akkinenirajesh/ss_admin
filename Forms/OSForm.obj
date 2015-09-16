@@ -1,0 +1,44 @@
+//import('../Models/OS.obj')
+Form OSForm{
+	name : 'OS'
+	model : #OS
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			OSInformation{
+				label :'OS Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#name
+				label	 :'OS Name'
+				fieldGroup:#OSInformation
+			}
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

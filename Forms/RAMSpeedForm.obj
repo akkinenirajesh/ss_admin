@@ -1,0 +1,44 @@
+//import('../Models/RAMSpeed.obj')
+Form RAMSpeedForm{
+	name : 'RAM Speed'
+	model : #RAMSpeed
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			ramSpeedInformation{
+				label :'RAM Speed Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#speed
+				label	 :'Speed'
+				fieldGroup:#ramSpeedInformation
+			}
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

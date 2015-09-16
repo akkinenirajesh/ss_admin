@@ -1,0 +1,49 @@
+//import('../Models/IPAllocationOption.obj')
+Form IPAllocationOptionForm{
+	name : 'IPAllocationOption'
+	model : #IPAllocationOption
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			ipAllocationOptionInformation{
+				label :'IP Allocation Option Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#count
+				label	 :'Count'
+				fieldGroup:#ipAllocationOptionInformation
+			},
+		{
+				property :#cost
+				label	 :'Cost'
+				fieldGroup:#ipAllocationOptionInformation
+			}
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

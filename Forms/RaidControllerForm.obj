@@ -1,0 +1,44 @@
+//import('../Models/RaidController.obj')
+Form RaidControllerForm{
+	name : 'RaidController'
+	model : #RaidController
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			raidControllerInformation{
+				label :'Raid Controller Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#model
+				label	 :'Model'
+				fieldGroup:#raidControllerInformation
+			}
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

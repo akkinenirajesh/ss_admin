@@ -5,6 +5,7 @@ Model StorageOption {
 			name: 'Drive'
 			type: Reference
 			referenceTo: #Drive
+			required : true
 		},
 		count {
 			name: 'Count'

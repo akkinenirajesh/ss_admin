@@ -4,11 +4,13 @@ Model Drive {
 		model {
 			name: 'Model'
 			type: Text
+			required : true
 		},
 		size {
 			name: 'Size in GB'
 			type: Number
 			scale: 0
+			required : true
 		}
 	]
 }

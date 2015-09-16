@@ -4,6 +4,7 @@ Model IPAllocationOption {
 		count {
 			name: 'Count'
 			type: Number
+			required : true
 		},
 		cost {
 			name: 'Cost'

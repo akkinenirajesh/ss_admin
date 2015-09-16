@@ -4,6 +4,7 @@ Model ControlPanel {
 		name {
 			name: 'Name'
 			type: Text
+			required : true
 		}
 	]
 }

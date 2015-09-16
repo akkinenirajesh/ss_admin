@@ -1,0 +1,140 @@
+//import('../Models/Plan.obj')
+Form PlanForm{
+	name : 'Plan'
+	model : #Plan
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			planInformation{
+				label :'Plan Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#Name
+				label	 :'Company Name'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#Provider
+				label	 :'Provider'
+				mandatory : true
+				fieldGroup:#planInformation
+			},
+			{
+				property :#basePrice
+				label	 :'Base Price'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#setupFee
+				label	 :'Setup Fee'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#excludingVAT
+				label	 :'ExcludingVAT'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#quarterlyDiscount
+				label	 :'Quarterly Discount'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#annuallyDiscount
+				label	 :'Annually Discount'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#defaultPricingMode
+				label	 :'Pricing Mode'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#processors
+				label	 :'Processors'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#rams
+				label	 :'RAMs'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#storage
+				label	 :'Storage'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#osOptions
+				label	 :'OS Options'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#controlPanels
+				label	 :'Control Panels'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#raidOptions
+				label	 :'Raid Options'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#remoteOptions
+				label	 :'Remote Options'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#backupStorage
+				label	 :'Backup Storage'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#networkBackup
+				label	 :'Network Backup'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#firewallOptions
+				label	 :'Firewall Options'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#ipAllocation
+				label	 :'Ip Allocation'
+				fieldGroup:#planInformation
+			},
+			{
+				property :#bandwidthOptions
+				label	 :'Bandwidth Options'
+				fieldGroup:#planInformation
+			},
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

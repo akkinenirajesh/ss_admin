@@ -29,39 +29,47 @@ Model Plan {
 		quarterlyDiscount {
 			name: 'Quarterly Discount'
 			type: Percent
+			existenceCondition : {!defaultPricingMode==PricingMode.Monthly}
 		},
 		annuallyDiscount {
 			name: 'Annually Discount'
 			type: Percent
+			existenceCondition : {!defaultPricingMode==PricingMode.Monthly}
 		},
 		defaultPricingMode {
 			name: 'Default Pricing Mode'
 			type: Picklist
 			picklist: #PricingMode
+			defaultValue : {!PricingMode.Monthly}
+			required: true
 		},
 		processors {
 			name: 'Processor Options'
 			type: Reference
 			referenceTo: #ProcessorOption
 			relation: OneManyChildren
+			required : true
 		},
 		rams {
 			name: 'RAM Options'
 			type: Reference
 			referenceTo: #RAMOption
 			relation: OneManyChildren
+			required : true
 		},
 		storage {
 			name: 'Storage Options'
 			type: Reference
 			referenceTo: #StorageOption
 			relation: OneManyChildren
+			required : true
 		},
 		osOptions {
 			name: 'OS Options'
 			type: Reference
 			referenceTo: #OSOption
 			relation: OneManyChildren
+			required : true
 		},
 		controlPanels {
 			name: 'Control Panel Options'
@@ -104,8 +112,9 @@ Model Plan {
 			type: Reference
 			referenceTo: #IPAllocationOption
 			relation: OneManyChildren
+			required : true
 		},
-		banddithOptions {
+		bandwidthOptions {
 			name: 'Bandwidth Options'
 			type: Reference
 			referenceTo: #BandwidthOption

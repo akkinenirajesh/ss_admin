@@ -1,0 +1,50 @@
+//import('../Models/CPOption.obj')
+Form CPOption{
+	name : 'Control Panel Option'
+	model : #CPOption
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			controlPanelInformation{
+				label :'Control Panel Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#controlPanel
+				label	 :'Control Panel'
+				fieldGroup:#controlPanelInformation
+			},
+			{
+				property :#cost
+				label	 :'Cost'
+				mandatory : true
+				fieldGroup:#controlPanelInformation
+			}
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

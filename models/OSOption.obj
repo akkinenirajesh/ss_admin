@@ -5,6 +5,7 @@ Model OSOption{
 			name: 'OS'
 			type: Reference
 			referenceTo: #OS
+			required : true
 		},
 		cost {
 			name: 'Cost'

@@ -4,6 +4,7 @@ Model DataCenter {
 		name {
 			name: 'Name'
 			type: Text
+			required : true
 		},
 		address {
 			name: 'Address'
@@ -12,6 +13,7 @@ Model DataCenter {
 		location {
 			name: 'Location'
 			type: Text
+			required : true
 		}
 	]
 }

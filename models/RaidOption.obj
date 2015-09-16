@@ -5,11 +5,13 @@ Model RaidOption {
 			name: 'Controller'
 			type: Reference
 			referenceTo: #RaidController
+			required : true
 		},
 		raidType {
 			name: 'Type'
 			type: Reference
 			referenceTo: #RaidType
+			required : true
 		},
 		cost {
 			name: 'Cost'

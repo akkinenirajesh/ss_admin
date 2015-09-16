@@ -1,0 +1,13 @@
+Picklist PricingMode{
+	values : [
+		Monthly{
+			name : 'Monthly'
+		},
+		Quarterly{
+			name : 'Quarterly'
+		},
+		Annually{
+			name : 'Annually'
+		}
+	]
+}

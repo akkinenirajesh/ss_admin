@@ -5,11 +5,13 @@ Model RAM{
 			name: 'Size in GB'
 			type: Number
 			scale: 0
+			required : true
 		},
 		type {
 			name: 'Type'
 			type: Reference
 			referenceTo: #RAMType
+			required : true
 		},
 		speed {
 			name: 'Speed'

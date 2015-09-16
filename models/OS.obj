@@ -4,6 +4,7 @@ Model OS{
 		name{
 			name: 'OS Name'
 			type: Text
+			required : true
 		}
 	]
 }

@@ -4,6 +4,7 @@ Model Processor {
 		model {
 			name: 'model'
 			type: Text
+			required : true
 		},
 		
 	]

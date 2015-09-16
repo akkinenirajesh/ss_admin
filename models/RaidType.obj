@@ -4,6 +4,7 @@ Model RaidType {
 		name {
 			name: 'Name'
 			type: Text
+			required : true
 		}
 	]
 }

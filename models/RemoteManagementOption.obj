@@ -5,6 +5,7 @@ Model RemoteManagementOption {
 			name: 'Name'
 			type: Reference
 			referenceTo: #RemoteManagement
+			required : true
 		},
 		cost {
 			name: 'Cost'

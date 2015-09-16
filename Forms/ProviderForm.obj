@@ -1,0 +1,90 @@
+//import('../Models/Provider.obj')
+Form ProviderForm{
+	name : 'Provier'
+	model : #Provider
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			providerInformation{
+				label :'Provider Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#companyName
+				label	 :'Company Name'
+				fieldGroup:#providerInformation
+			},
+			{
+				property :#website
+				label	 :'Website'
+				mandatory : true
+				fieldGroup:#providerInformation
+			},
+			{
+				property :#country
+				label	 :'Country'
+				fieldGroup:#providerInformation
+			},
+			{
+				property :#address
+				label	 :'Address'
+				fieldGroup:#providerInformation
+			},
+			{
+				property :#enquiryPhone1
+				label	 :'Enquiry Phone1'
+				fieldGroup:#providerInformation
+			},
+			{
+				property :#enquiryPhone2
+				label	 :'Enquiry Phone2'
+				fieldGroup:#providerInformation
+			},
+			{
+				property :#enquiryEmail
+				label	 :'Enquiry Email'
+				fieldGroup:#providerInformation
+			},
+			{
+				property :#supportPhone1
+				label	 :'Support Phone1'
+				fieldGroup:#providerInformation
+			},
+			{
+				property :#supportEmail
+				label	 :'Support Email'
+				fieldGroup:#providerInformation
+			},
+			{
+				property :#currency
+				label	 :'Currency'
+				fieldGroup:#providerInformation
+			}
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

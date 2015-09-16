@@ -4,10 +4,12 @@ Model NetworkBackup {
 		name {
 			name: 'Name'
 			type: Text
+			required : true
 		},
 		size {
 			name: 'Size in GB'
 			type: Number
+			required : true
 		}
 	]
 }

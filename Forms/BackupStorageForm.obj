@@ -1,0 +1,50 @@
+//import('../Models/BackupStorage.obj')
+Form BackupStorage{
+	name : 'BackupStorage'
+	model : #BackupStorage
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			backupStorageInformation{
+				label :'BackupStorage Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#Name
+				label	 :'Name'
+				fieldGroup:#backupStorageInformation
+			},
+			{
+				property :#size
+				label	 :'size'
+				mandatory : true
+				fieldGroup:#backupStorageInformation
+			}
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

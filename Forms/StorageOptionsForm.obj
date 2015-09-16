@@ -1,0 +1,54 @@
+//import('../Models/StorageOptions.obj')
+Form StorageOptionsForm{
+	name : 'Storage Options'
+	model : #StorageOptions
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			storageOptionsInformation{
+				label :'OS Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#drive
+				label	 :'Drive'
+				fieldGroup:#storageOptionsInformation
+			},
+		{
+				property :#count
+				label	 :'Count'
+				fieldGroup:#storageOptionsInformation
+			},
+		{
+				property :#cost
+				label	 :'Cost'
+				fieldGroup:#storageOptionsInformation
+			}
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

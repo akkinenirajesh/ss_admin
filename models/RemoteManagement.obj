@@ -4,6 +4,7 @@ Model RemoteManagement {
 		name {
 			name: 'Name'
 			type: Text
+			required : true
 		}
 	]
 }

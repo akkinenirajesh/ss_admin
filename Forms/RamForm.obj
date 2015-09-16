@@ -1,0 +1,59 @@
+//import('../Models/RAM.obj')
+Form RAMForm{
+	name : 'RAM'
+	model : #RAM
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			ramInformation{
+				label :'RAM Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#size
+				label	 :'Size'
+				fieldGroup:#ramInformation
+			},
+		{
+				property :#type
+				label	 :'Type'
+				fieldGroup:#ramInformation
+			},
+		{
+				property :#speed
+				label	 :'Speed'
+				fieldGroup:#ramInformation
+			},
+		{
+				property :#ecc
+				label	 :'ECC RAM'
+				fieldGroup:#ramInformation
+			}
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

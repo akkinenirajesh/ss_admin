@@ -5,6 +5,7 @@ Model CPOption {
 			name: 'Control Panel'
 			type: Reference
 			referenceTo: #ControlPanel
+			required : true
 		},
 		cost {
 			name: 'Cost'

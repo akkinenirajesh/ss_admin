@@ -8,6 +8,7 @@ Model BandwidthOption {
 		inLimit {
 			name: 'In Limit in GB'
 			type: Number
+			required : true
 		},
 		outLimit {
 			name: 'Out Limit in GB'
@@ -16,6 +17,7 @@ Model BandwidthOption {
 		speed {
 			name: 'Speed in Mbits/s'
 			type: Number
+			required : true
 		},
 		cost {
 			name: 'Cost'

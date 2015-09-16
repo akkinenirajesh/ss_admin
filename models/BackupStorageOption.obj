@@ -5,10 +5,12 @@ Model BackupStorageOption {
 			name: 'Storage'
 			type: Reference
 			referenceTo: #BackupStorage
+			required : true
 		},
 		count {
 			name: 'Count'
 			type: Number
+			required : true
 		},
 		cost {
 			name: 'Cost'

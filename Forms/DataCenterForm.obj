@@ -1,0 +1,56 @@
+//import('../Models/DataCenter.obj')
+Form DataCenterForm{
+	name : 'Data Center'
+	model : #DataCenter
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			dataCenterInformation{
+				label :'Data Center Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#name
+				label	 :'Name'
+				fieldGroup:#dataCenterInformation
+			},
+			{
+				property :#address
+				label	 :'Address'
+				mandatory : true
+				fieldGroup:#dataCenterInformation
+			},
+			{
+				property :#location
+				label	 :'Location'
+				mandatory : true
+				fieldGroup:#dataCenterInformation
+			}
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

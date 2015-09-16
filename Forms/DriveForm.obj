@@ -1,0 +1,50 @@
+//import('../Models/Drive.obj')
+Form DriveForm{
+	name : 'Drive'
+	model : #Drive
+	isPreferred :true
+	storeFormWithRecord :true
+	fieldGroups :[
+	{
+		groups : [
+			driveInformation{
+				label :'Drive Information'
+				show  :true
+				showFieldGroupTitle :true
+			}
+		]
+	}]
+	fields :[
+	{
+		fields :[
+		{
+				property :#model
+				label	 :'Model'
+				fieldGroup:#driveInformation
+			},
+			{
+				property :#size
+				label	 :'Size'
+				mandatory : true
+				fieldGroup:#driveInformation
+			}
+		]
+	}]
+	actions :[
+		saveAndClose{
+			type  :System
+			actionType : saveAndClose
+			label :'Save And Close'
+		},
+		saveAndNew{
+			type  :System
+			actionType : saveAndNew
+			label :'Save And New'
+		},
+		cancel{
+			type  :System
+			actionType : cancel
+			label :'Cancel'
+		}
+	]
+}

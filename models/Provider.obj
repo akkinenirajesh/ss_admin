@@ -5,7 +5,7 @@ Model Provider{
 			name: 'Company Name'
 			type: Text
 		},
-		site {
+		website {
 			name: 'Site'
 			type: Text
 		},
